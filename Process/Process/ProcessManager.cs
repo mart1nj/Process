@@ -11,11 +11,11 @@ namespace Process.Process
             this.processes = processes;
 		}
 
-        public void StartProcesses()
+        public void StartProcesses(string consumer, string provider)
         {
             foreach(AbstractProcess process in processes)
             {
-                process.DoTasks();
+                process.DoTasks(consumer, provider);
             }
         }
 	}

@@ -47,7 +47,6 @@
     <Compile Include="Process\Process\AbstractProcess.cs" />
     <Compile Include="Process\Process\SalesProcess.cs" />
     <Compile Include="Process\ProcessManager.cs" />
-    <Compile Include="Process\Party\SalesRelationship.cs" />
     <Compile Include="Process\Party\RelationshipType.cs" />
     <Compile Include="Process\Party\Role.cs" />
     <Compile Include="Process\Tasks\GiveProductTask.cs" />

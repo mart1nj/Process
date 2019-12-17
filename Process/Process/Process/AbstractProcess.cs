@@ -4,25 +4,31 @@ using System.Collections.Generic;
 
 namespace Process.Process.Process
 {
-    public abstract class AbstractProcess {
+    public abstract class AbstractProcess
+    {
+        private readonly Role role;
+
         public AbstractProcess()
         {
             Tasks = new List<Task>();
             DefineTasks();
+            role = new Role();
+            role.SetName("Manager");
         }
 
         public abstract void DefineTasks();
 
-        public void DoTasks()
+        public void DoTasks(string consumer, string provider)
         {
-            foreach(Task task in Tasks)
+            foreach (Task task in Tasks)
             {
-                task.DoTask();
+                task.DoTask(consumer, provider);
             }
         }
-
-        public Role Role { get; } = Role.Manager;
-
+        public Role GetRole()
+        {
+            return role;
+        }
         public List<Task> Tasks { get; }
     }
 }

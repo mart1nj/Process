@@ -2,9 +2,11 @@
 
 namespace Process.Process.Tasks {
     public class GiveProductTask : Task {
-        public override void DoTask() {
-            Console.WriteLine("We've given the product to the customer. ");
-            Outcomes.Add(new Outcome("Product sold. "));
+        public override void DoTask(string consumer, string provider) {
+            base.DoTask(consumer, provider);
+            Console.WriteLine("{0} has given the product to the {1}. ", GetProvider().GetName(), GetConsumer().GetName());
+            GetOutcomes().Add(new Outcome("Product sold. "));
+
         }
     }
 }
