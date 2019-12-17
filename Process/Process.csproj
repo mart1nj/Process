@@ -43,12 +43,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Process\Outcome.cs" />
-    <Compile Include="Process\Process.cs" />
+    <Compile Include="Process\Process\AbstractProcess.cs" />
+    <Compile Include="Process\Process\SalesProcess.cs" />
     <Compile Include="Process\ProcessManager.cs" />
-    <Compile Include="Process\Relationship.cs" />
-    <Compile Include="Process\RelationshipType.cs" />
-    <Compile Include="Process\Role.cs" />
-    <Compile Include="Process\Task.cs" />
+    <Compile Include="Process\Party\SalesRelationship.cs" />
+    <Compile Include="Process\Party\RelationshipType.cs" />
+    <Compile Include="Process\Party\Role.cs" />
+    <Compile Include="Process\Tasks\GiveProductTask.cs" />
+    <Compile Include="Process\Tasks\GreetCustomerTask.cs" />
+    <Compile Include="Process\Tasks\ReceiveMoneyTask.cs" />
+    <Compile Include="Process\Tasks\RegisterProductTask.cs" />
+    <Compile Include="Process\Tasks\Task.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
