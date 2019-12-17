@@ -5,7 +5,7 @@ namespace Process.Process
 {
 	public class ProcessManager {
 
-		private List<AbstractProcess> processes;
+		List<AbstractProcess> processes;
 
 		public ProcessManager(List<AbstractProcess> processes){
             this.processes = processes;
@@ -17,6 +17,11 @@ namespace Process.Process
             {
                 process.DoTasks(consumer, provider);
             }
+        }
+
+        public List<AbstractProcess> GetProcesses()
+        {
+            return processes;
         }
 	}
 }
