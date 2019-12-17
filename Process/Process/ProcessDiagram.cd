@@ -1,24 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Process.Process.Party.SalesRelationship">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Position X="5.75" Y="2.25" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAEAAAQBBAAEAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Process\Party\SalesRelationship.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Customer" />
-      <Property Name="Provider" />
-      <Property Name="RelationshipType" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="Process.Process.Process.AbstractProcess">
-    <Position X="3" Y="3" Width="1.5" />
+    <Position X="3" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAEAAAABAAAAAAAAkACAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAJAAAAAAA=</HashCode>
       <FileName>Process\Process\AbstractProcess.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -29,62 +27,65 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Process.Process.Process.SalesProcess">
-    <Position X="3" Y="5.75" Width="1.5" />
+    <Position X="3" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Process\Process\SalesProcess.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Process.Process.Tasks.GiveProductTask">
-    <Position X="5.75" Y="5.25" Width="1.5" />
+    <Position X="5.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Process\Tasks\GiveProductTask.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Process.Process.Tasks.GreetCustomerTask">
-    <Position X="7.75" Y="6.75" Width="1.5" />
+    <Position X="7.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Process\Tasks\GreetCustomerTask.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Process.Process.Tasks.ReceiveMoneyTask">
-    <Position X="7.75" Y="5.25" Width="1.5" />
+    <Position X="7.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Process\Tasks\ReceiveMoneyTask.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Process.Process.Tasks.RegisterProductTask">
-    <Position X="5.75" Y="6.75" Width="1.5" />
+    <Position X="5.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Process\Tasks\RegisterProductTask.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Process.Process.Tasks.Task">
-    <Position X="5.75" Y="3" Width="1.5" />
+    <Position X="5.75" Y="3.75" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQgAAAE=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQgAAAA=</HashCode>
       <FileName>Process\Tasks\Task.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Outcomes" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="Process.Process.Outcome" Collapsed="true">
-    <Position X="8.75" Y="3" Width="1.5" />
+  <Class Name="Process.Process.Outcome">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Process\Outcome.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Process.Process.ProcessManager">
-    <Position X="0.5" Y="3" Width="1.5" />
+    <Position X="0.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Process\ProcessManager.cs</FileName>
@@ -93,10 +94,22 @@
       <Field Name="processes" />
     </ShowAsCollectionAssociation>
   </Class>
+  <Class Name="Process.Process.Party.Relationship">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Process\Party\Relationship.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RelationshipType" />
+      <Property Name="Customer" />
+      <Property Name="Provider" />
+    </ShowAsAssociation>
+  </Class>
   <Enum Name="Process.Process.Party.RelationshipType">
     <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Process\Party\RelationshipType.cs</FileName>
     </TypeIdentifier>
   </Enum>

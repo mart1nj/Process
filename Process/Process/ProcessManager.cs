@@ -15,7 +15,7 @@ namespace Process.Process
         {
             foreach(AbstractProcess process in processes)
             {
-                process.doTasks();
+                process.DoTasks();
             }
         }
 	}

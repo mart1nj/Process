@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Process\Outcome.cs" />
+    <Compile Include="Process\Party\Relationship.cs" />
     <Compile Include="Process\Process\AbstractProcess.cs" />
     <Compile Include="Process\Process\SalesProcess.cs" />
     <Compile Include="Process\ProcessManager.cs" />

@@ -1,5 +1,4 @@
-namespace Process.Process.Party
-{
+namespace Process.Process.Party {
 	public enum Role {
         Customer, 
         Provider,

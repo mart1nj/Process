@@ -5,39 +5,24 @@ using System.Collections.Generic;
 namespace Process.Process.Process
 {
     public abstract class AbstractProcess {
-        private List<Task> tasks;
-        private Role role = Role.Manager;
-
         public AbstractProcess()
         {
-            tasks = new List<Task>();
-            defineTasks();
+            Tasks = new List<Task>();
+            DefineTasks();
         }
 
-        public abstract void defineTasks();
+        public abstract void DefineTasks();
 
-        public void doTasks()
+        public void DoTasks()
         {
-            foreach(Task task in tasks)
+            foreach(Task task in Tasks)
             {
                 task.DoTask();
             }
         }
 
-        public Role Role
-        {
-            get
-            {
-                return role;
-            }
-        }
+        public Role Role { get; } = Role.Manager;
 
-        public List<Task> Tasks
-        {
-            get
-            {
-                return tasks;
-            }
-        }
+        public List<Task> Tasks { get; }
     }
 }
